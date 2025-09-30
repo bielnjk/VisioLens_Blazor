@@ -30,3 +30,12 @@ C:\Users\gabri\OneDrive\Área de Trabalho\Programação\VisioLens_Blazor\VisioLe
 C:\Users\gabri\OneDrive\Área de Trabalho\Programação\VisioLens_Blazor\VisioLens_Blazor\obj\Debug\net8.0\VisioLens_Blazor.pdb
 C:\Users\gabri\OneDrive\Área de Trabalho\Programação\VisioLens_Blazor\VisioLens_Blazor\obj\Debug\net8.0\VisioLens_Blazor.genruntimeconfig.cache
 C:\Users\gabri\OneDrive\Área de Trabalho\Programação\VisioLens_Blazor\VisioLens_Blazor\obj\Debug\net8.0\ref\VisioLens_Blazor.dll
+C:\Users\Jeovana Knoblauch\OneDrive\Documentos\GitHub\VisioLens_Blazor\VisioLens_Blazor\obj\Debug\net8.0\VisioLens_Blazor.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Jeovana Knoblauch\OneDrive\Documentos\GitHub\VisioLens_Blazor\VisioLens_Blazor\obj\Debug\net8.0\VisioLens_Blazor.AssemblyInfoInputs.cache
+C:\Users\Jeovana Knoblauch\OneDrive\Documentos\GitHub\VisioLens_Blazor\VisioLens_Blazor\obj\Debug\net8.0\VisioLens_Blazor.AssemblyInfo.cs
+C:\Users\Jeovana Knoblauch\OneDrive\Documentos\GitHub\VisioLens_Blazor\VisioLens_Blazor\obj\Debug\net8.0\VisioLens_Blazor.csproj.CoreCompileInputs.cache
+C:\Users\Jeovana Knoblauch\OneDrive\Documentos\GitHub\VisioLens_Blazor\VisioLens_Blazor\obj\Debug\net8.0\VisioLens_Blazor.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Jeovana Knoblauch\OneDrive\Documentos\GitHub\VisioLens_Blazor\VisioLens_Blazor\obj\Debug\net8.0\VisioLens_Blazor.sourcelink.json
+C:\Users\Jeovana Knoblauch\OneDrive\Documentos\GitHub\VisioLens_Blazor\VisioLens_Blazor\obj\Debug\net8.0\VisioLens_Blazor.dll
+C:\Users\Jeovana Knoblauch\OneDrive\Documentos\GitHub\VisioLens_Blazor\VisioLens_Blazor\obj\Debug\net8.0\refint\VisioLens_Blazor.dll
+C:\Users\Jeovana Knoblauch\OneDrive\Documentos\GitHub\VisioLens_Blazor\VisioLens_Blazor\obj\Debug\net8.0\VisioLens_Blazor.pdb

@@ -14,7 +14,11 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("VisioLens_Blazor")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
+<<<<<<< Updated upstream
 [assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+=======
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b76b4ba03bf2b5886c053c6c61ca857ff26407b1")]
+>>>>>>> Stashed changes
 [assembly: System.Reflection.AssemblyProductAttribute("VisioLens_Blazor")]
 [assembly: System.Reflection.AssemblyTitleAttribute("VisioLens_Blazor")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

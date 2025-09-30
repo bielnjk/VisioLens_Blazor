@@ -12,12 +12,13 @@
 }
 
 .navbar-toggler:checked[b-099qrxbv7e] {
-    background-color: rgba(255, 255, 255, 0.5);
+    background-color: #000000;
 }
 
 .top-row[b-099qrxbv7e] {
-    height: 3.5rem;
-    background-color: rgba(0,0,0,0.4);
+    height: 5px;
+    width: 5px;
+    
 }
 
 .navbar-brand[b-099qrxbv7e] {
@@ -103,3 +104,9 @@
         overflow-y: auto;
     }
 }
+#LogoVisio[b-099qrxbv7e] {
+    width: 100px;
+    height: 150px;
+}
+
+

@@ -1,0 +1,54 @@
+﻿@page "/ListaAgendamento"
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Agendamento - VisioLens</title
+<link href="/bootstrap/listaagendamento.css" rel="stylesheet" />
+</head>
+<body>
+        <!-- CONTEÚDO PRINCIPAL -->
+        <main class="main-content">
+            <div class="header">
+                <h1>LISTA DE AGENDAMENTO</h1>
+                <div class="colaborador">
+                    <h2>Colaborador</h2>
+                    <button class="listar-btn">Listar</button>
+                </div>
+            </div>
+
+            <div class="search-box">
+                <input type="text" placeholder="Pesquisar Agendamentos">
+            </div>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Cliente</th>
+                        <th>Data</th>
+                        <th>Hora</th>
+                        <th>Especialidade</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Maria Eduarda</td>
+                        <td>2024-04-16</td>
+                        <td>10:00</td>
+                        <td>Casamento <span class="icon">✈️</span></td>
+                    </tr>
+                    <tr>
+                        <td>Beatriz</td>
+                        <td>2025-05-16</td>
+                        <td>12:00</td>
+                        <td>Ensaio 15 anos <span class="icon">✈️</span></td>
+                    </tr>
+                    <tr><td colspan="4" class="empty"></td></tr>
+                    <tr><td colspan="4" class="empty"></td></tr>
+                </tbody>
+            </table>
+        </main>
+  
+</body>
+</html>

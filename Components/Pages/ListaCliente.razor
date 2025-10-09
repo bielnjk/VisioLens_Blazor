@@ -1,0 +1,37 @@
+﻿@page "/ListaCliente"
+<PageTitle>ListaCliente</PageTitle>
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VisioLens - Lista de Clientes</title>
+    <link href="/bootstrap/listacliente.css" rel="stylesheet" />
+</head>
+<body>
+   
+    <div class="main">
+        <h1>Lista de Clientes</h1>
+
+        <div class="toolbar">
+            <input type="text" id="search" placeholder="Pesquisar Clientes">
+            <button id="listar">Listar</button>
+        </div>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Nome</th>
+                    <th>Data da Sessão</th>
+                    <th>Ações</th>
+                </tr>
+            </thead>
+            <tbody id="clientes">
+            </tbody>
+        </table>
+    </div>
+
+ </body>
+</html>
+

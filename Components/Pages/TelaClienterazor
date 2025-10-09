@@ -1,0 +1,100 @@
+﻿@page "/TelaInicial_cliente"
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VisioLens - Cliente</title>
+    <link href="/bootstrap/telacolaborador.css" rel="stylesheet" />
+  
+</head>
+<body>
+
+    <div class="container">
+        <!-- MENU LATERAL -->
+        <aside class="menu">
+            <div class="logo">
+                <img src="logo.png" alt="VisioLens">
+            </div>
+            <ul>
+                <li class="ativo"><i class="fa fa-home"></i> TELA INICIAL</li>
+                <li><i class="fa fa-file-invoice-dollar"></i> ORÇAMENTO</li>
+                <li><i class="fa fa-calendar"></i> AGENDAMENTOS</li>
+                <li><i class="fa fa-credit-card"></i> PAGAMENTO</li>
+                <li><i class="fa fa-image"></i> ACESSO DE FOTOS</li>
+                <li><i class="fa fa-gear"></i> CONFIGURAÇÃO</li>
+            </ul>
+        </aside>
+
+        <!-- CONTEÚDO PRINCIPAL -->
+        <main class="conteudo">
+            <header class="topo">
+                <div class="titulo">
+                    <h1>INICIAL</h1>
+                    <p><strong>Seja muito Bem-vindo(a)</strong></p>
+                </div>
+                <div class="cliente">
+                    <a href="#" class="voltar"><i class="fa fa-home"></i> Voltar para a tela de login</a>
+                </div>
+            </header>
+
+            <section class="acoes">
+                <div class="acao">
+                    <i class="fa fa-dollar-sign"></i>
+                    <p>Orçamento único para você</p>
+                </div>
+                <div class="acao">
+                    <i class="fa fa-calendar-alt"></i>
+                    <p>Agendar sessão de fotos</p>
+                </div>
+                <div class="acao">
+                    <i class="fa fa-money-bill"></i>
+                    <p>Realizar pagamento</p>
+                </div>
+                <div class="acao">
+                    <i class="fa fa-camera"></i>
+                    <p>Acessar suas fotos prontas</p>
+                </div>
+            </section>
+
+            <section class="cards">
+                <div class="card">
+                    <h4>Próximos agendamentos</h4>
+                    <p><i class="fa fa-calendar"></i> 05 de outubro de 2025, às 15:00hrs</p>
+                </div>
+                <div class="card">
+                    <h4>Status de Pagamento</h4>
+                    <p><i class="fa fa-times-circle"></i> Pendente</p>
+                </div>
+                <div class="card">
+                    <h4>Fotos disponíveis</h4>
+                    <p><i class="fa fa-image"></i> 0</p>
+                </div>
+            </section>
+
+            <section class="dicas">
+                <h3>Dicas e novidades</h3>
+                <div class="dica-item">
+                    <i class="fa fa-bullhorn"></i>
+                    <p>Novos pacotes promocionais disponíveis.</p>
+                    <i class="fa fa-angle-down"></i>
+                </div>
+            </section>
+
+            <footer class="rodape">
+                <div class="contatos">
+                    <p><i class="fa fa-phone"></i> (11) 99999-9999</p>
+                    <p><i class="fa fa-envelope"></i> contato@visiolens.com</p>
+                </div>
+                <div class="social">
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-whatsapp"></i>
+                </div>
+            </footer>
+        </main>
+    </div>
+
+</body>
+</html>

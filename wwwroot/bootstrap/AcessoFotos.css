@@ -1,0 +1,191 @@
+﻿* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #fff;
+    padding-left: 260px;
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+}
+
+/* Sidebar */
+.sidebar {
+    width: 280px;
+    background-color: #000;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-top: 35px;
+}
+
+    .sidebar .logo {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 20px;
+    }
+
+        .sidebar .logo img {
+            width: 200px;
+        }
+
+    .sidebar .menu ul {
+        list-style: none;
+        width: 100%;
+    }
+
+        .sidebar .menu ul li {
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            font-size: 18px;
+            width: 100%;
+            padding: 25px 30px;
+            box-sizing: border-box;
+        }
+
+            .sidebar .menu ul li i {
+                font-size: 22px;
+                width: 30px;
+                text-align: center;
+            }
+
+            .sidebar .menu ul li.active {
+                background-color: #222;
+                width: 100%;
+                display: flex;
+                align-items: center;
+                padding-left: 30px;
+                padding-right: 85px;
+                box-sizing: border-box;
+            }
+
+            .sidebar .menu ul li:hover {
+                background-color: #333;
+            }
+
+/* Main Content */
+.main-content {
+    flex: 1;
+    padding: 50px;
+    overflow-y: auto;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+    .header h1 {
+        font-size: 36px;
+    }
+
+/* Barra de busca abaixo do título */
+.search-container {
+    margin-bottom: 35px;
+}
+
+    .search-container .search-bar {
+        width: 100%;
+        padding: 15px 20px;
+        border-radius: 30px;
+        border: 1px solid #ccc;
+        font-size: 18px;
+    }
+
+/* Photos Section */
+.photos-section h2 {
+    margin-bottom: 20px;
+    font-size: 32px;
+}
+
+.photo-grid {
+    display: flex;
+    gap: 30px;
+    margin-bottom: 50px;
+}
+
+.photo-card {
+    background-color: #333;
+    color: #fff;
+    width: 200px;
+    height: 140px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 18px;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+    .photo-card .plus {
+        font-size: 32px;
+        margin-bottom: 10px;
+    }
+
+/* Actions */
+.actions {
+    display: flex;
+    gap: 70px;
+}
+
+.action-column h3 {
+    margin-bottom: 20px;
+    font-size: 26px;
+}
+
+/* Botões grandes e uniformes */
+.action-column .btn {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 18px 25px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 18px;
+    background-color: #888;
+    color: #fff;
+    cursor: pointer;
+    text-align: left;
+    font-size: 20px;
+    width: 300px; /* todos os botões do mesmo tamanho */
+    white-space: nowrap; /* evita quebra de linha */
+}
+
+    /* Todos os botões: aumenta o espaço entre ícones e textos */
+    .action-column .btn .icons-text {
+        gap: 18px; /* distância maior entre ícone(s) e texto */
+    }
+
+/* WhatsApp/Instagram: mantém ícones juntos */
+.double-icons {
+    display: flex;
+    align-items: center;
+    gap: 2px; /* distância mínima entre WhatsApp e Instagram */
+}
+
+/* Ajustes para ícones */
+.action-column .btn i {
+    font-size: 20px;
+}
+
+    /* Espaço entre dois ícones no mesmo botão */
+    .action-column .btn i + i {
+        margin-left: 4;
+        margin-right: 4;
+    }
+
+.action-column .btn:hover {
+    background-color: #666;
+}

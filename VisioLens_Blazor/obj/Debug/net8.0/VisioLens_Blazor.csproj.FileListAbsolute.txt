@@ -30,3 +30,33 @@ C:\Users\gabri\OneDrive\Área de Trabalho\Programação\VisioLens_Blazor\VisioLe
 C:\Users\gabri\OneDrive\Área de Trabalho\Programação\VisioLens_Blazor\VisioLens_Blazor\obj\Debug\net8.0\VisioLens_Blazor.pdb
 C:\Users\gabri\OneDrive\Área de Trabalho\Programação\VisioLens_Blazor\VisioLens_Blazor\obj\Debug\net8.0\VisioLens_Blazor.genruntimeconfig.cache
 C:\Users\gabri\OneDrive\Área de Trabalho\Programação\VisioLens_Blazor\VisioLens_Blazor\obj\Debug\net8.0\ref\VisioLens_Blazor.dll
+C:\Users\2023102020078\Documents\GitHub\VisioLens_Blazor\VisioLens_Blazor\bin\Debug\net8.0\appsettings.Development.json
+C:\Users\2023102020078\Documents\GitHub\VisioLens_Blazor\VisioLens_Blazor\bin\Debug\net8.0\appsettings.json
+C:\Users\2023102020078\Documents\GitHub\VisioLens_Blazor\VisioLens_Blazor\bin\Debug\net8.0\VisioLens_Blazor.staticwebassets.runtime.json
+C:\Users\2023102020078\Documents\GitHub\VisioLens_Blazor\VisioLens_Blazor\bin\Debug\net8.0\VisioLens_Blazor.exe
+C:\Users\2023102020078\Documents\GitHub\VisioLens_Blazor\VisioLens_Blazor\bin\Debug\net8.0\VisioLens_Blazor.deps.json
+C:\Users\2023102020078\Documents\GitHub\VisioLens_Blazor\VisioLens_Blazor\bin\Debug\net8.0\VisioLens_Blazor.runtimeconfig.json
+C:\Users\2023102020078\Documents\GitHub\VisioLens_Blazor\VisioLens_Blazor\bin\Debug\net8.0\VisioLens_Blazor.dll
+C:\Users\2023102020078\Documents\GitHub\VisioLens_Blazor\VisioLens_Blazor\bin\Debug\net8.0\VisioLens_Blazor.pdb
+C:\Users\2023102020078\Documents\GitHub\VisioLens_Blazor\VisioLens_Blazor\obj\Debug\net8.0\VisioLens_Blazor.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\2023102020078\Documents\GitHub\VisioLens_Blazor\VisioLens_Blazor\obj\Debug\net8.0\VisioLens_Blazor.AssemblyInfoInputs.cache
+C:\Users\2023102020078\Documents\GitHub\VisioLens_Blazor\VisioLens_Blazor\obj\Debug\net8.0\VisioLens_Blazor.AssemblyInfo.cs
+C:\Users\2023102020078\Documents\GitHub\VisioLens_Blazor\VisioLens_Blazor\obj\Debug\net8.0\VisioLens_Blazor.csproj.CoreCompileInputs.cache
+C:\Users\2023102020078\Documents\GitHub\VisioLens_Blazor\VisioLens_Blazor\obj\Debug\net8.0\VisioLens_Blazor.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\2023102020078\Documents\GitHub\VisioLens_Blazor\VisioLens_Blazor\obj\Debug\net8.0\VisioLens_Blazor.sourcelink.json
+C:\Users\2023102020078\Documents\GitHub\VisioLens_Blazor\VisioLens_Blazor\obj\Debug\net8.0\staticwebassets.build.json
+C:\Users\2023102020078\Documents\GitHub\VisioLens_Blazor\VisioLens_Blazor\obj\Debug\net8.0\staticwebassets.development.json
+C:\Users\2023102020078\Documents\GitHub\VisioLens_Blazor\VisioLens_Blazor\obj\Debug\net8.0\staticwebassets\msbuild.VisioLens_Blazor.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\2023102020078\Documents\GitHub\VisioLens_Blazor\VisioLens_Blazor\obj\Debug\net8.0\staticwebassets\msbuild.build.VisioLens_Blazor.props
+C:\Users\2023102020078\Documents\GitHub\VisioLens_Blazor\VisioLens_Blazor\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.VisioLens_Blazor.props
+C:\Users\2023102020078\Documents\GitHub\VisioLens_Blazor\VisioLens_Blazor\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.VisioLens_Blazor.props
+C:\Users\2023102020078\Documents\GitHub\VisioLens_Blazor\VisioLens_Blazor\obj\Debug\net8.0\staticwebassets.pack.json
+C:\Users\2023102020078\Documents\GitHub\VisioLens_Blazor\VisioLens_Blazor\obj\Debug\net8.0\scopedcss\Components\Layout\MainLayout.razor.rz.scp.css
+C:\Users\2023102020078\Documents\GitHub\VisioLens_Blazor\VisioLens_Blazor\obj\Debug\net8.0\scopedcss\Components\Layout\NavMenu.razor.rz.scp.css
+C:\Users\2023102020078\Documents\GitHub\VisioLens_Blazor\VisioLens_Blazor\obj\Debug\net8.0\scopedcss\bundle\VisioLens_Blazor.styles.css
+C:\Users\2023102020078\Documents\GitHub\VisioLens_Blazor\VisioLens_Blazor\obj\Debug\net8.0\scopedcss\projectbundle\VisioLens_Blazor.bundle.scp.css
+C:\Users\2023102020078\Documents\GitHub\VisioLens_Blazor\VisioLens_Blazor\obj\Debug\net8.0\VisioLens_Blazor.dll
+C:\Users\2023102020078\Documents\GitHub\VisioLens_Blazor\VisioLens_Blazor\obj\Debug\net8.0\refint\VisioLens_Blazor.dll
+C:\Users\2023102020078\Documents\GitHub\VisioLens_Blazor\VisioLens_Blazor\obj\Debug\net8.0\VisioLens_Blazor.pdb
+C:\Users\2023102020078\Documents\GitHub\VisioLens_Blazor\VisioLens_Blazor\obj\Debug\net8.0\VisioLens_Blazor.genruntimeconfig.cache
+C:\Users\2023102020078\Documents\GitHub\VisioLens_Blazor\VisioLens_Blazor\obj\Debug\net8.0\ref\VisioLens_Blazor.dll

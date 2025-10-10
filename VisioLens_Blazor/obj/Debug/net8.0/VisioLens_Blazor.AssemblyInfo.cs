@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("VisioLens_Blazor")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+47e530e70aa7534e6c08f32ae099f4d98f23dcd8")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+10d8543bc06061e4c91842ac2a9f3e5d5f61cd68")]
 [assembly: System.Reflection.AssemblyProductAttribute("VisioLens_Blazor")]
 [assembly: System.Reflection.AssemblyTitleAttribute("VisioLens_Blazor")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

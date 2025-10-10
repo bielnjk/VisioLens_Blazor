@@ -1,0 +1,133 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\Jeovana Knoblauch\\Downloads\\VisioLens_Blazor_BD\\VisioLens_Blazor-main\\VisioLens_Blazor-main\\VisioLens_Blazor\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\VisioLens_Blazor.bundle.scp.css",
+      "PackagePath": "staticwebassets\\VisioLens_Blazor.bundle.scp.css"
+    },
+    {
+      "Id": "C:\\Users\\Jeovana Knoblauch\\Downloads\\VisioLens_Blazor_BD\\VisioLens_Blazor-main\\VisioLens_Blazor-main\\VisioLens_Blazor\\wwwroot\\app.css",
+      "PackagePath": "staticwebassets\\app.css"
+    },
+    {
+      "Id": "C:\\Users\\Jeovana Knoblauch\\Downloads\\VisioLens_Blazor_BD\\VisioLens_Blazor-main\\VisioLens_Blazor-main\\VisioLens_Blazor\\wwwroot\\bootstrap\\AcessoFotos.css",
+      "PackagePath": "staticwebassets\\bootstrap\\AcessoFotos.css"
+    },
+    {
+      "Id": "C:\\Users\\Jeovana Knoblauch\\Downloads\\VisioLens_Blazor_BD\\VisioLens_Blazor-main\\VisioLens_Blazor-main\\VisioLens_Blazor\\wwwroot\\bootstrap\\Agendamento.css",
+      "PackagePath": "staticwebassets\\bootstrap\\Agendamento.css"
+    },
+    {
+      "Id": "C:\\Users\\Jeovana Knoblauch\\Downloads\\VisioLens_Blazor_BD\\VisioLens_Blazor-main\\VisioLens_Blazor-main\\VisioLens_Blazor\\wwwroot\\bootstrap\\Configuracao.css",
+      "PackagePath": "staticwebassets\\bootstrap\\Configuracao.css"
+    },
+    {
+      "Id": "C:\\Users\\Jeovana Knoblauch\\Downloads\\VisioLens_Blazor_BD\\VisioLens_Blazor-main\\VisioLens_Blazor-main\\VisioLens_Blazor\\wwwroot\\bootstrap\\Imagens\\Agendamento_icone.png",
+      "PackagePath": "staticwebassets\\bootstrap\\Imagens\\Agendamento_icone.png"
+    },
+    {
+      "Id": "C:\\Users\\Jeovana Knoblauch\\Downloads\\VisioLens_Blazor_BD\\VisioLens_Blazor-main\\VisioLens_Blazor-main\\VisioLens_Blazor\\wwwroot\\bootstrap\\Imagens\\Configuracao_icone.png",
+      "PackagePath": "staticwebassets\\bootstrap\\Imagens\\Configuracao_icone.png"
+    },
+    {
+      "Id": "C:\\Users\\Jeovana Knoblauch\\Downloads\\VisioLens_Blazor_BD\\VisioLens_Blazor-main\\VisioLens_Blazor-main\\VisioLens_Blazor\\wwwroot\\bootstrap\\Imagens\\ListaAgendamento_Icone.png",
+      "PackagePath": "staticwebassets\\bootstrap\\Imagens\\ListaAgendamento_Icone.png"
+    },
+    {
+      "Id": "C:\\Users\\Jeovana Knoblauch\\Downloads\\VisioLens_Blazor_BD\\VisioLens_Blazor-main\\VisioLens_Blazor-main\\VisioLens_Blazor\\wwwroot\\bootstrap\\Imagens\\ListaCliente_Icone.png",
+      "PackagePath": "staticwebassets\\bootstrap\\Imagens\\ListaCliente_Icone.png"
+    },
+    {
+      "Id": "C:\\Users\\Jeovana Knoblauch\\Downloads\\VisioLens_Blazor_BD\\VisioLens_Blazor-main\\VisioLens_Blazor-main\\VisioLens_Blazor\\wwwroot\\bootstrap\\Imagens\\ListaColaborador_Icone.png",
+      "PackagePath": "staticwebassets\\bootstrap\\Imagens\\ListaColaborador_Icone.png"
+    },
+    {
+      "Id": "C:\\Users\\Jeovana Knoblauch\\Downloads\\VisioLens_Blazor_BD\\VisioLens_Blazor-main\\VisioLens_Blazor-main\\VisioLens_Blazor\\wwwroot\\bootstrap\\Imagens\\LogoVisio.jpeg",
+      "PackagePath": "staticwebassets\\bootstrap\\Imagens\\LogoVisio.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\Jeovana Knoblauch\\Downloads\\VisioLens_Blazor_BD\\VisioLens_Blazor-main\\VisioLens_Blazor-main\\VisioLens_Blazor\\wwwroot\\bootstrap\\Imagens\\Orcamento_icone.png",
+      "PackagePath": "staticwebassets\\bootstrap\\Imagens\\Orcamento_icone.png"
+    },
+    {
+      "Id": "C:\\Users\\Jeovana Knoblauch\\Downloads\\VisioLens_Blazor_BD\\VisioLens_Blazor-main\\VisioLens_Blazor-main\\VisioLens_Blazor\\wwwroot\\bootstrap\\Imagens\\Pacote_icone.png",
+      "PackagePath": "staticwebassets\\bootstrap\\Imagens\\Pacote_icone.png"
+    },
+    {
+      "Id": "C:\\Users\\Jeovana Knoblauch\\Downloads\\VisioLens_Blazor_BD\\VisioLens_Blazor-main\\VisioLens_Blazor-main\\VisioLens_Blazor\\wwwroot\\bootstrap\\Imagens\\Pagamento_icone.png",
+      "PackagePath": "staticwebassets\\bootstrap\\Imagens\\Pagamento_icone.png"
+    },
+    {
+      "Id": "C:\\Users\\Jeovana Knoblauch\\Downloads\\VisioLens_Blazor_BD\\VisioLens_Blazor-main\\VisioLens_Blazor-main\\VisioLens_Blazor\\wwwroot\\bootstrap\\Imagens\\Sessao_icone2.png",
+      "PackagePath": "staticwebassets\\bootstrap\\Imagens\\Sessao_icone2.png"
+    },
+    {
+      "Id": "C:\\Users\\Jeovana Knoblauch\\Downloads\\VisioLens_Blazor_BD\\VisioLens_Blazor-main\\VisioLens_Blazor-main\\VisioLens_Blazor\\wwwroot\\bootstrap\\Imagens\\TelaInicial_Icone.png",
+      "PackagePath": "staticwebassets\\bootstrap\\Imagens\\TelaInicial_Icone.png"
+    },
+    {
+      "Id": "C:\\Users\\Jeovana Knoblauch\\Downloads\\VisioLens_Blazor_BD\\VisioLens_Blazor-main\\VisioLens_Blazor-main\\VisioLens_Blazor\\wwwroot\\bootstrap\\ListaAgendamento.css",
+      "PackagePath": "staticwebassets\\bootstrap\\ListaAgendamento.css"
+    },
+    {
+      "Id": "C:\\Users\\Jeovana Knoblauch\\Downloads\\VisioLens_Blazor_BD\\VisioLens_Blazor-main\\VisioLens_Blazor-main\\VisioLens_Blazor\\wwwroot\\bootstrap\\ListaCliente.css",
+      "PackagePath": "staticwebassets\\bootstrap\\ListaCliente.css"
+    },
+    {
+      "Id": "C:\\Users\\Jeovana Knoblauch\\Downloads\\VisioLens_Blazor_BD\\VisioLens_Blazor-main\\VisioLens_Blazor-main\\VisioLens_Blazor\\wwwroot\\bootstrap\\ListaColaborador.css",
+      "PackagePath": "staticwebassets\\bootstrap\\ListaColaborador.css"
+    },
+    {
+      "Id": "C:\\Users\\Jeovana Knoblauch\\Downloads\\VisioLens_Blazor_BD\\VisioLens_Blazor-main\\VisioLens_Blazor-main\\VisioLens_Blazor\\wwwroot\\bootstrap\\Orcamento.css",
+      "PackagePath": "staticwebassets\\bootstrap\\Orcamento.css"
+    },
+    {
+      "Id": "C:\\Users\\Jeovana Knoblauch\\Downloads\\VisioLens_Blazor_BD\\VisioLens_Blazor-main\\VisioLens_Blazor-main\\VisioLens_Blazor\\wwwroot\\bootstrap\\Pacote.css",
+      "PackagePath": "staticwebassets\\bootstrap\\Pacote.css"
+    },
+    {
+      "Id": "C:\\Users\\Jeovana Knoblauch\\Downloads\\VisioLens_Blazor_BD\\VisioLens_Blazor-main\\VisioLens_Blazor-main\\VisioLens_Blazor\\wwwroot\\bootstrap\\Pagamento.css",
+      "PackagePath": "staticwebassets\\bootstrap\\Pagamento.css"
+    },
+    {
+      "Id": "C:\\Users\\Jeovana Knoblauch\\Downloads\\VisioLens_Blazor_BD\\VisioLens_Blazor-main\\VisioLens_Blazor-main\\VisioLens_Blazor\\wwwroot\\bootstrap\\Sessao.css",
+      "PackagePath": "staticwebassets\\bootstrap\\Sessao.css"
+    },
+    {
+      "Id": "C:\\Users\\Jeovana Knoblauch\\Downloads\\VisioLens_Blazor_BD\\VisioLens_Blazor-main\\VisioLens_Blazor-main\\VisioLens_Blazor\\wwwroot\\bootstrap\\TelaCliente.css",
+      "PackagePath": "staticwebassets\\bootstrap\\TelaCliente.css"
+    },
+    {
+      "Id": "C:\\Users\\Jeovana Knoblauch\\Downloads\\VisioLens_Blazor_BD\\VisioLens_Blazor-main\\VisioLens_Blazor-main\\VisioLens_Blazor\\wwwroot\\bootstrap\\TelaInicial.css",
+      "PackagePath": "staticwebassets\\bootstrap\\TelaInicial.css"
+    },
+    {
+      "Id": "C:\\Users\\Jeovana Knoblauch\\Downloads\\VisioLens_Blazor_BD\\VisioLens_Blazor-main\\VisioLens_Blazor-main\\VisioLens_Blazor\\wwwroot\\bootstrap\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\bootstrap\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Jeovana Knoblauch\\Downloads\\VisioLens_Blazor_BD\\VisioLens_Blazor-main\\VisioLens_Blazor-main\\VisioLens_Blazor\\wwwroot\\bootstrap\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\bootstrap\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Jeovana Knoblauch\\Downloads\\VisioLens_Blazor_BD\\VisioLens_Blazor-main\\VisioLens_Blazor-main\\VisioLens_Blazor\\wwwroot\\favicon.png",
+      "PackagePath": "staticwebassets\\favicon.png"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.VisioLens_Blazor.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.VisioLens_Blazor.props",
+      "PackagePath": "build\\VisioLens_Blazor.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.VisioLens_Blazor.props",
+      "PackagePath": "buildMultiTargeting\\VisioLens_Blazor.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.VisioLens_Blazor.props",
+      "PackagePath": "buildTransitive\\VisioLens_Blazor.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

@@ -1,0 +1,33 @@
+﻿@page "/ListaColaborador"
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VisioLens - Lista de Colaboradores</title>
+    <link href="/bootstrap/listacolaborador.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="main">
+        <h1>Lista de Colaboradores</h1>
+
+        <div class="toolbar">
+            <input type="text" id="search" placeholder="Pesquisar Colaboradores">
+            <button id="listar">Listar</button>
+        </div>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Nome</th>
+                    <th>Cargo</th>
+                    <th>Ações</th>
+                </tr>
+            </thead>
+            <tbody id="colaboradores">
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>

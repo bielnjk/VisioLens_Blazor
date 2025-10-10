@@ -1,0 +1,88 @@
+﻿@page "/Agendamento/novo"
+@rendermode InteractiveServer
+
+@using VisioLens_Blazor.Models;
+@inject AgendamentoDAO agendamentoDAO;
+@inject NavigationManager Navigation;
+
+<PageTitle>Agendamento - Novo</PageTitle>
+
+<h1 class="text-xl font-semibold text-gray-800 dark:text-gray-100 mb-6">Novo Agendamento</h1>
+
+@if (erro != null)
+{
+    <div class="alert alert-danger">
+        @erro
+    </div>
+}
+
+<div class="row">
+    <div class="col">
+        <EditForm Model="_novoAgendamento" OnSubmit="Salvar">
+            <div class="form-group mb-4">
+                <label>Cliente</label>
+                <input @bind-value="_novoAgendamento!.Cliente" type="text" class="form-control" name="cliente"
+                    placeholder="Informe o cliente" />
+            </div>
+
+            <div class="form-group mb-4">
+                <label>Data</label>
+                <input @bind-value="_novoAgendamento!.Data" type="text" class="form-control" name="data"
+                       placeholder="Informe a data" />
+            </div>
+
+            <div class="form-group mb-4">
+                <label>Tipo de Sessao</label>
+                <input @bind-value="_novoAgendamento!.TipoDeSessao" type="text" class="form-control" name="tipoDeSessao"
+                       placeholder="Informe o tipo de sessão" />
+            </div>
+
+            <div class="form-group mb-4">
+                <label>Duração</label>
+                <input @bind-value="_novoAgendamento!.Duracao" type="text" class="form-control" name="duracao"
+                       placeholder="Informe a duração da sessão" />
+            </div>
+
+            <div class="form-group mb-4">
+                <label>Fotográfo</label>
+                <input @bind-value="_novoAgendamento!.Fotografo" type="text" class="form-control" name="fotografo"
+                       placeholder="Informe o fotográfo" />
+            </div>
+
+            <div class="form-group mb-4">
+                <label>Observação</label>
+                <textarea class="form-control" rows="5">@_novoAgendamento!.Observacao</textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary">Salvar</button>
+        </EditForm>
+    </div>
+</div>
+
+@code {
+    private string? erro = null;
+
+    [SupplyParameterFromForm]
+
+    private Agendamento? _novoAgendamento { get; set; } = new Agendamento();
+
+    private void Salvar()
+    {
+        try
+        {
+            if (_novoAgendamento.Cliente is null || _novoAgendamento.Cliente == 0)
+            {
+                throw new Exception("O campo cliente é obrigatório");
+            }
+
+            agendamentoDAO.Inserir(_novoAgendamento);
+
+            Navigation.NavigateTo("/Agendamento");
+        }
+        catch (Exception ex)
+        {
+            erro = ex.Message;
+        }
+    }
+    
+}

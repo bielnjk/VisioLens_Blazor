@@ -1,0 +1,69 @@
+﻿@page "/Pagamento"
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagamento - VisioLens</title>
+    <link href="/bootstrap/pagamento.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="container">
+
+        <!-- CONTEÚDO PRINCIPAL -->
+        <main class="conteudo">
+            <h1>PAGAMENTO</h1>
+
+            <form class="formulario">
+                <div class="linha">
+                    <label><i class="fa-solid fa-user"></i> Cliente:</label>
+                    <input type="text">
+                    <button type="submit" class="btn-salvar">Salvar</button>
+                </div>
+
+                <div class="linha">
+                    <label><i class="fa-solid fa-camera"></i> Fotógrafo Responsável:</label>
+                    <input type="text">
+                </div>
+
+                <div class="linha">
+                    <label><i class="fa-solid fa-box"></i> Pacote contratado:</label>
+                    <input type="text">
+                </div>
+
+                <div class="linha">
+                    <label><i class="fa-solid fa-sack-dollar"></i> Valor Total:</label>
+                    <input type="text">
+                </div>
+
+                <div class="linha">
+                    <label><i class="fa-solid fa-credit-card"></i> Forma de Pagamento:</label>
+                    <select>
+                        <option>Selecione...</option>
+                        <option>Dinheiro</option>
+                        <option>Cartão</option>
+                        <option>Pix</option>
+                    </select>
+                </div>
+
+                <!-- CAMPOS ABAIXO -->
+                <div class="linha-coluna">
+                    <label><i class="fa-solid fa-money-bill"></i> Valor Pago:</label>
+                    <input type="text">
+
+                    <label><i class="fa-solid fa-coins"></i> Valor Restante:</label>
+                    <input type="text">
+
+                    <label><i class="fa-solid fa-circle-check"></i> Status do Pagamento:</label>
+                    <select>
+                        <option>Selecione...</option>
+                        <option>Pago</option>
+                        <option>Pendente</option>
+                    </select>
+                </div>
+            </form>
+        </main>
+    </div>
+</body>
+</html>

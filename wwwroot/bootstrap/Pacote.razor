@@ -1,0 +1,48 @@
+﻿@page "/Pacote"
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Pacote</title>
+    <link href="/bootstrap/pacote.css" rel="stylesheet" />
+</head>
+<body>
+
+    <div class="container">
+        <h1>CADASTRO PACOTE</h1>
+
+        <form class="formulario">
+            <div class="coluna">
+                <label><span></span> Nome do pacote:</label>
+                <input type="text" placeholder="">
+
+                <label><span></span> Valor:</label>
+                <input type="text" placeholder="">
+
+                <label><span></span> Dimensões:</label>
+                <div class="dimensoes">
+                    <input type="text" placeholder="Altura">
+                    <input type="text" placeholder="Largura">
+                    <input type="text" placeholder="Comprimento">
+                </div>
+            </div>
+
+            <div class="coluna">
+                <label><span></span> Descrição:</label>
+                <input type="text" placeholder="">
+
+                <label><span></span> Destinatário:</label>
+                <input type="text" placeholder="">
+            </div>
+        </form>
+
+        <div class="botoes">
+            <button class="salvar">Salvar</button>
+            <button class="cancelar">Cancelar</button>
+        </div>
+    </div>
+
+</body>
+</html>

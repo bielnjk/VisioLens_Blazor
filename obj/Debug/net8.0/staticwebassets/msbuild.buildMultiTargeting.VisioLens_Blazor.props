@@ -1,3 +1,0 @@
-﻿<Project>
-  <Import Project="..\build\VisioLens_Blazor.props" />
-</Project>

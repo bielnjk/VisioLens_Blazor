@@ -1,37 +1,80 @@
 ﻿@page "/ListaCliente"
-<PageTitle>ListaCliente</PageTitle>
+@using VisioLens_Blazor.Models
+@inject ClienteDAO ClienteDAO
+<PageTitle>Lista de Clientes</PageTitle>
 
-<!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>VisioLens - Lista de Clientes</title>
-    <link href="/bootstrap/listacliente.css" rel="stylesheet" />
-</head>
-<body>
-   
-    <div class="main">
-        <h1>Lista de Clientes</h1>
+<link href="/bootstrap/ListaCliente.css" rel="stylesheet" />
 
-        <div class="toolbar">
-            <input type="text" id="search" placeholder="Pesquisar Clientes">
-            <button id="listar">Listar</button>
-        </div>
+<div class="main">
+    <h1>Lista de Clientes</h1>
 
-        <table>
-            <thead>
-                <tr>
-                    <th>Nome</th>
-                    <th>Data da Sessão</th>
-                    <th>Ações</th>
-                </tr>
-            </thead>
-            <tbody id="clientes">
-            </tbody>
-        </table>
+    <div class="toolbar">
+        <input id="search" type="text" @bind="filtro" placeholder="Pesquisar Clientes" />
+        <button id="filtrar" @onclick="Filtrar">Filtrar</button>
+        <button id="listar" @onclick="ListarTodos">Listar Todos</button>
     </div>
 
- </body>
-</html>
+    @if (clientes == null)
+    {
+        <p><em>Carregando clientes...</em></p>
+    }
+    else if (clientes.Count == 0)
+    {
+        <p>Nenhum cliente encontrado.</p>
+    }
+    else
+    {
+        <div class="table-responsive">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Nome</th>
+                        <th>CPF</th>
+                        <th>Telefone</th>
+                        <th>Endereço</th>
+                        <th>Email</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var cliente in clientes)
+                    {
+                        <tr>
+                            <td>@cliente.Nome</td>
+                            <td>@cliente.CPF</td>
+                            <td>@cliente.Telefone</td>
+                            <td>@cliente.Endereco</td>
+                            <td>@cliente.Email</td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    }
+</div>
 
+@code {
+    private List<Cliente>? clientes;
+    private string filtro = "";
+
+    protected override void OnInitialized()
+    {
+        ListarTodos();
+    }
+
+    private void ListarTodos()
+    {
+        clientes = ClienteDAO.ListarTodos() ?? new List<Cliente>();
+    }
+
+    private void Filtrar()
+    {
+        if (string.IsNullOrWhiteSpace(filtro))
+            ListarTodos();
+        else
+            clientes = ClienteDAO.ListarTodos()
+                ?.Where(c => c.Nome.Contains(filtro, StringComparison.OrdinalIgnoreCase))
+                .ToList() ?? new List<Cliente>();
+    }
+}
+
+    

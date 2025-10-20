@@ -1,13 +1,16 @@
-﻿.main {
+﻿/* Container principal que respeita a sidebar */
+.main {
     flex: 1;
     padding: 40px;
-    margin-left: 250px;
+    margin-left: 250px; /* ajuste conforme a largura da sua sidebar */
 }
 
-h1 {
+/* Título */
+.main h1 {
     margin-bottom: 20px;
 }
 
+/* Toolbar com input e botões */
 .toolbar {
     display: flex;
     align-items: center;
@@ -31,6 +34,7 @@ h1 {
     cursor: pointer;
 }
 
+/* Tabela */
 table {
     width: 100%;
     border-collapse: collapse;
@@ -54,10 +58,29 @@ tr:hover {
     background-color: #f9f9f9;
 }
 
+/* Botões de ação dentro da tabela, caso precise futuramente */
 button.action {
     background: none;
     border: none;
     cursor: pointer;
     font-size: 18px;
     margin-right: 8px;
+}
+
+/* Responsividade: remove margin-left em telas pequenas */
+@media (max-width: 768px) {
+    .main {
+        margin-left: 0;
+        padding: 20px;
+    }
+
+    #search {
+        width: 100%;
+    }
+
+    .toolbar {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 5px;
+    }
 }

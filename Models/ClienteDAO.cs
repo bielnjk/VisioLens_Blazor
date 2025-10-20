@@ -1,4 +1,5 @@
-﻿using VisioLens_Blazor.Configs;
+using MySql.Data.MySqlClient;
+using VisioLens_Blazor.Configs;
 
 namespace VisioLens_Blazor.Models
 {
@@ -15,43 +16,26 @@ namespace VisioLens_Blazor.Models
         {
             var lista = new List<Cliente>();
 
-            var comando = _conexao.CreateCommand("SELECT * FROM cliente;");
-            var leitor = comando.ExecuteReader();
+            using var conn = _conexao.GetConnection();
+            using var comando = _conexao.CreateCommand("SELECT * FROM cliente;", conn);
+            using var leitor = comando.ExecuteReader();
 
             while (leitor.Read())
             {
-                var cliente = new Cliente();
-                cliente.Id = leitor.GetInt32("id_cli");
-                cliente.Nome = DAOHelper.GetString(leitor, "nome_cli");
-                cliente.CPF = DAOHelper.GetString(leitor, "cpf_cli");
-                cliente.Telefone = DAOHelper.GetString(leitor, "telefone_cli");
-                cliente.Endereco = DAOHelper.GetString(leitor, "endereco_cli");
-                cliente.Email = DAOHelper.GetString(leitor, "email_cli");
+                var cliente = new Cliente
+                {
+                    Id = leitor.GetInt32("id_cli"),
+                    Nome = DAOHelper.GetString(leitor, "nome_cli"),
+                    CPF = DAOHelper.GetString(leitor, "cpf_cli"),
+                    Telefone = DAOHelper.GetString(leitor, "telefone_cli"),
+                    Endereco = DAOHelper.GetString(leitor, "endereco_cli"),
+                    Email = DAOHelper.GetString(leitor, "email_cli")
+                };
 
                 lista.Add(cliente);
             }
 
             return lista;
-        }
-
-        public void Inserir(Cliente cliente)
-        {
-            try
-            {
-                var comando = _conexao.CreateCommand("INSERT INTO cliente VALUES (null, @_nome, @_cpf, @_telefone, @_endereco, @_email)");
-
-                comando.Parameters.AddWithValue("@_nome", cliente.Nome);
-                comando.Parameters.AddWithValue("@_cpf", cliente.CPF);
-                comando.Parameters.AddWithValue("@_telefone", cliente.Telefone);
-                comando.Parameters.AddWithValue("@_endereco", cliente.Endereco);
-                comando.Parameters.AddWithValue("@_email", cliente.Email);
-
-                comando.ExecuteNonQuery();
-            }
-            catch (Exception)
-            {
-                throw;
-            }
         }
     }
 }

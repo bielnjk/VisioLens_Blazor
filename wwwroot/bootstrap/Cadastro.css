@@ -1,0 +1,188 @@
+/* reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+body {
+  display: flex;
+  justify-content: center;   /* centraliza horizontal */
+  align-items: center;        /* centraliza vertical */
+  min-height: 100vh;          /* tela inteira */
+  background: #e3e3e3;        /* opcional */
+}
+
+/* garante altura mínima, sem forçar overflow vertical em telas pequenas */
+html, body {
+  height: 100%;
+  width: 100%;
+}
+
+/* container principal: layout flex com comportamento responsivo */
+.container {
+  display: flex;
+  height: auto;        /* deixa o conteúdo definir a altura */
+  max-height: 90vh;    /* evita ultrapassar a tela */
+  width: 100%;
+  max-width: 1200px;   /* limite visual opcional */
+  border-radius: 12px; /* opcional para deixar estético */
+  overflow: hidden;    /* evita deslocamentos estranhos */
+}
+
+
+/* LADO ESQUERDO */
+.left {
+  flex: 0 0 45%;
+  background: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+}
+
+/* logo: limita largura e mantém responsivo */
+.logo {
+  max-width: 100%;
+  width: 70%;
+  height: auto;
+  object-fit: contain;
+}
+
+/* LADO DIREITO */
+.right {
+  flex: 1;
+  padding: 60px 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  background: #fff;
+}
+
+/* título */
+.right h1 {
+  font-size: 32px;
+  margin-bottom: 24px;
+  letter-spacing: 0.4px;
+}
+
+/* formulário */
+form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 520px; /* limita largura do formulário em telas grandes */
+}
+
+/* labels */
+label {
+  font-size: 18px;
+  margin: 10px 0 6px;
+  color: #222;
+}
+
+/* inputs (estilo consistente) */
+input[type="text"],
+input[type="email"],
+input[type="date"],
+input[type="password"],
+input[type="tel"] {
+  padding: 12px 16px;
+  font-size: 16px;
+  border: 1.8px solid #ccc;
+  border-radius: 25px;
+  outline: none;
+  transition: border-color .15s, box-shadow .15s;
+  width: 100%;
+  display: block;
+}
+
+/* foco do input */
+input:focus {
+  border-color: #333;
+  box-shadow: 0 0 0 4px rgba(0,0,0,0.03);
+}
+
+/* espaçamento entre campos */
+.form-row {
+  margin-bottom: 14px;
+}
+
+/* Campo de senha com ícone: posicionamento e padding extra no input */
+.password-field {
+  position: relative;
+  width: 100%;
+}
+
+.password-field input {
+  padding-right: 48px; /* espaço para o ícone */
+}
+
+/* ícone (olho) posicionado dentro do campo */
+.eye {
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  font-size: 18px;
+  user-select: none;
+  line-height: 1;
+}
+
+/* botão principal */
+.btn {
+  margin-top: 18px;
+  padding: 14px 18px;
+  background: #000;
+  color: #fff;
+  font-size: 18px;
+  border: none;
+  border-radius: 40px;
+  cursor: pointer;
+  width: 100%;
+  max-width: 320px;
+}
+
+.btn:hover {
+  opacity: 0.9;
+}
+
+/* redes sociais */
+.social {
+  margin-top: 28px;
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}
+
+/* imagens das redes: tamanho e estilo */
+.social img {
+  width: 36px;
+  height: 36px;
+  object-fit: cover;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+/* responsividade: em telas pequenas, empilha verticalmente */
+@media (max-width: 900px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .left, .right {
+    flex: none;
+    width: 100%;
+    padding: 30px 20px;
+  }
+
+  .right h1 {
+    font-size: 28px;
+  }
+
+  .logo {
+    width: 50%;
+  }
+}

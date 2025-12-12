@@ -1,0 +1,61 @@
+@page "/Cadastro"
+
+@rendermode InteractiveServer
+
+@using VisioLens_Blazor.Models
+@inject VisioLens_Blazor.DAO.CadastroDAO CadastroDAO
+@inject IJSRuntime JS
+
+<link href="/bootstrap/Cadastro.css" rel="stylesheet" />
+
+<div class="container">
+    <div class="right">
+        <h1>CADASTRAR CLIENTE</h1>
+
+        <EditForm Model="@cliente" OnValidSubmit="Salvar" FormName="CadastroCliente">
+            <DataAnnotationsValidator />
+
+            <label for="nome">Nome:</label>
+            <InputText id="nome" class="input" @bind-Value="cliente.Nome" />
+
+            <label for="telefone">Telefone:</label>
+            <InputText id="telefone" class="input" @bind-Value="cliente.Telefone" />
+
+            <label for="email">Email:</label>
+            <InputText id="email" class="input" @bind-Value="cliente.Email" />
+
+            <label for="cpf">CPF:</label>
+            <InputText id="cpf" class="input" @bind-Value="cliente.CPF" />
+
+            <label for="endereco">Endereço:</label>
+            <InputText id="endereco" class="input" @bind-Value="cliente.Endereco" />
+
+            <button class="btn" type="submit">CADASTRAR</button>
+        </EditForm>
+
+        <div class="social">
+            <a href="https://accounts.google.com" target="_blank">
+                <img src="https://lh3.googleusercontent.com/ogw/ADGmqu9E2Uu8gmHGqcB9S4MN7lznEU61lNEwG8IYvYj4=s64-c-mo"
+                    style="width:35px; border-radius:50%;">
+            </a>
+
+            <a href="https://facebook.com" target="_blank">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/0/05/Facebook_Logo_%282019%29.png">
+            </a>
+
+            <a href="https://instagram.com" target="_blank">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png">
+            </a>
+        </div>
+    </div>
+</div>
+
+@code {
+    Cliente cliente = new();
+
+    private void Salvar()
+    {
+        CadastroDAO.Cadastrar(cliente);
+        cliente = new(); // Limpa
+    }
+}

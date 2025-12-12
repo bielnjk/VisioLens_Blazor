@@ -1,0 +1,112 @@
+@page "/consultar-cliente"
+@using VisioLens_Blazor.Models
+@rendermode InteractiveServer
+@inject ClienteDAO clienteDAO
+@inject NavigationManager nav
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Configurações - Cliente</title>
+    <link href="/bootstrap/ConsultaCliente.css" rel="stylesheet" />
+</head>
+
+<div class="page-content">
+
+    <div class="form-container">
+
+        <h1 class="titulo">CONSULTAR CLIENTE</h1>
+
+        <div class="form">
+            <label class="form-label">Nome:</label>
+            <input class="form-input" type="text" placeholder="Digite o nome..." @bind="Nome" />
+
+            <label class="form-label">Telefone:</label>
+            <input class="form-input" type="text" placeholder="Digite o telefone..." @bind="Telefone" />
+
+            <label class="form-label">Email:</label>
+            <input class="form-input" type="email" placeholder="Digite o email..." @bind="Email" />
+
+            <label class="form-label">CPF:</label>
+            <input class="form-input" type="text" placeholder="Digite o CPF..." @bind="Cpf" />
+
+            <button class="btn-consultar" @onclick="Consultar">CONSULTAR</button>
+        </div>
+
+        @if (Resultados.Count > 0)
+        {
+            <div class="resultado">
+                <h2>Resultados encontrados (@Resultados.Count)</h2>
+
+                <table class="tabela">
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Nome</th>
+                            <th>Telefone</th>
+                            <th>Email</th>
+                            <th>CPF</th>
+                            <th>Ações</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var c in Resultados)
+                        {
+                            <tr>
+                                <td>@c.Id</td>
+                                <td>@c.Nome</td>
+                                <td>@c.Telefone</td>
+                                <td>@c.Email</td>
+                                <td>@c.CPF</td>
+                                <td>
+                                    <button class="btn-edit" @onclick="() => Editar(c.Id)">Editar</button>
+                                    <button class="btn-del" @onclick="() => Excluir(c.Id)">Excluir</button>
+                                </td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
+        }
+        else if (PesquisaRealizada)
+        {
+            <p class="nenhum">Nenhum cliente encontrado.</p>
+        }
+
+    </div>
+</div>
+
+@code {
+    private string? Nome;
+    private string? Telefone;
+    private string? Email;
+    private string? Cpf;
+
+    private List<Cliente> Resultados = new();
+    private bool PesquisaRealizada = false;
+
+    private async Task Consultar()
+    {
+        Resultados = await Task.Run(() =>
+            clienteDAO.Consultar(Nome, Telefone, Email, Cpf)
+        );
+
+        PesquisaRealizada = true;
+    }
+
+    private void Editar(int id)
+    {
+        nav.NavigateTo($"/editar-cliente/{id}");
+    }
+
+    private async Task Excluir(int id)
+    {
+        bool ok = await Task.Run(() => clienteDAO.Excluir(id));
+
+        if (ok)
+        {
+            Resultados.RemoveAll(c => c.Id == id);
+            StateHasChanged();
+        }
+    }
+}

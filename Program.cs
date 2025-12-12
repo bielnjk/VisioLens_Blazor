@@ -2,6 +2,7 @@ using VisioLens_Blazor.Components;
 using VisioLens_Blazor.Configs;
 using VisioLens_Blazor.Models;
 
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
@@ -16,9 +17,10 @@ builder.Services.AddScoped<VisioLens_Blazor.Models.OrcamentoDAO>();
 builder.Services.AddScoped<VisioLens_Blazor.Models.PacoteDAO>();
 builder.Services.AddScoped<VisioLens_Blazor.Models.TipoDeSessaoDAO>();
 builder.Services.AddScoped<VisioLens_Blazor.Models.PagamentoDAO>();
+builder.Services.AddScoped<VisioLens_Blazor.DAO.CadastroDAO>();
+
 
 var app = builder.Build();
-
 // Configure the HTTP request pipeline.
 if (!app.Environment.IsDevelopment())
 {

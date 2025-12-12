@@ -1,0 +1,105 @@
+/* Área principal da página */
+.page-content {
+    margin-left: 250px; /* largura da sidebar */
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+/* Container do formulário e resultados */
+.form-container {
+    width: 100%;
+    max-width: 650px;
+    background: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+/* Título */
+.titulo {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Labels */
+.form-label {
+    font-weight: 600;
+    margin-top: 10px;
+}
+
+/* Inputs */
+.form-input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+/* Botão consultar */
+.btn-consultar {
+    width: 100%;
+    padding: 12px;
+    background: black;
+    color: white;
+    border-radius: 5px;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    transition: .2s;
+}
+
+.btn-consultar:hover {
+    background: #333;
+}
+
+/* Tabela */
+.tabela {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.tabela th, .tabela td {
+    padding: 10px;
+    border: 1px solid #ccc;
+    text-align: center;
+}
+
+/* Botões de ação */
+.btn-edit {
+    background: #007bff;
+    color: white;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.btn-edit:hover {
+    background: #0056b3;
+}
+
+.btn-del {
+    background: #d9534f;
+    color: white;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-left: 5px;
+}
+
+.btn-del:hover {
+    background: #c9302c;
+}
+
+/* Mensagem de nenhum resultado */
+.nenhum {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+}

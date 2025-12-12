@@ -1,5 +1,5 @@
 ﻿<!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 
 <head>
     <meta charset="utf-8" />
@@ -13,8 +13,13 @@
 </head>
 
 <body>
-    <Routes />
-    <script src="_framework/blazor.web.js"></script>
+    <!-- Roteamento principal -->
+    <Routes @rendermode="InteractiveServer" />
+
+
+    <!-- Script do Blazor (Web Mode), igual ao seu projeto atual -->
+    <script src="_framework/blazor.server.js"></script>
+
 </body>
 
 </html>

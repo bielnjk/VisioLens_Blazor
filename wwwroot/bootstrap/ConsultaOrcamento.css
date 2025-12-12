@@ -1,0 +1,79 @@
+/* Container principal */
+.consulta-container {
+    max-width: 1000px;
+    margin: 30px auto;
+    padding: 25px;
+    background: #fff;
+    border-radius: 12px;
+    border: 1px solid #e2e2e2;
+    font-family: "Arial", sans-serif;
+}
+
+/* Título */
+.consulta-container h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    font-weight: 600;
+    color: #222;
+}
+
+/* Tabela */
+.tabela {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 16px;
+}
+
+/* Cabeçalho */
+.tabela thead th {
+    text-align: left;
+    padding: 12px;
+    background: #f7f7f7;
+    border-bottom: 2px solid #ccc;
+}
+
+/* Linhas */
+.tabela tbody tr {
+    border-bottom: 1px solid #eee;
+}
+
+.tabela tbody td {
+    padding: 12px;
+}
+
+/* Botões */
+.btn {
+    padding: 7px 14px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    font-weight: 600;
+    transition: 0.2s;
+    font-size: 14px;
+}
+
+/* Editar */
+.btn.editar {
+    background: #007bff;
+    color: white;
+}
+
+.btn.editar:hover {
+    background: #005fcc;
+}
+
+/* Excluir */
+.btn.excluir {
+    background: #d9534f;
+    color: white;
+}
+
+.btn.excluir:hover {
+    background: #b52b27;
+}
+
+/* Ações centralizadas */
+.acoes {
+    display: flex;
+    gap: 10px;
+}

@@ -18,6 +18,7 @@ namespace VisioLens_Blazor.Configs
         {
             double value = 0.0;
 
+
             if(!reader.IsDBNull(reader.GetOrdinal(collumn_name))) 
                 value = reader.GetDouble(collumn_name);
 
